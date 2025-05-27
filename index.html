@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>十个月的快乐 💖</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body class="bg-pink-100 font-sans text-gray-800 overflow-hidden">
+
+  <!-- Loading Screen -->
+    <div id="loader" class="fixed inset-0 bg-pink-200 flex flex-col items-center justify-center z-50">
+        <div class="text-2xl text-rose-600 font-bold animate-pulse">爱情正在加载中... 💖</div>
+    </div>
+
+    <!-- <audio id="bg-music" autoplay loop>
+        <source src="media/love.mp3" type="audio/mpeg">
+    </audio> -->
+
+    <video autoplay muted loop playsinline id="background-video" class="fixed top-0 left-0 w-full h-full object-cover z-0">
+        <source src="media/heart.mp4" type="video/mp4" />
+    </video>
+
+  <!-- Main Content -->
+    <div id="main" class="hidden relative z-10">
+        <button id="play-btn" class="mx-auto block bg-rose-500 hover:bg-rose-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out">
+            播音乐
+        </button>
+
+        <audio id="bg-audio" loop>
+            <source src="media/love.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio>
+
+        <script>
+            const audio = document.getElementById('bg-audio');
+            const btn = document.getElementById('play-btn');
+            btn.addEventListener('click', () => {
+                audio.play();
+                btn.style.display = 'none';
+            });
+        </script>
+        <div class="min-h-screen flex flex-col items-center justify-center p-4">
+        <h1 id="main-title" class="text-white text-4xl font-bold text-rose-600 mb-2 transition-all duration-1000 ease-in-out transform translate-y-1/2 opacity-0">
+            十个月快乐宝宝 💖
+        </h1>
+    
+        <div class="text-lg text-center text-white font-semibold">
+            <span id="typed-text"></span>
+        </div>
+
+        <section class="mt-12 w-full max-w-md sm:max-w-3xl mx-auto px-4" data-aos="fade-up">
+        <h2 class="text-xl sm:text-2xl font-semibold text-center mb-6 text-white">我们的回忆 📸</h2>
+        <div class="swiper mySwiper rounded-xl shadow-lg overflow-hidden">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="media/1.jpg" alt="Memory 1" class="w-full h-auto rounded-xl object-cover" />
+            </div>
+            <div class="swiper-slide">
+                <img src="media/2.jpg" alt="Memory 2" class="w-full h-auto rounded-xl object-cover" />
+            </div>
+            <div class="swiper-slide">
+                <img src="media/3.jpg" alt="Memory 3" class="w-full h-auto rounded-xl object-cover" />
+            </div>
+            <div class="swiper-slide">
+                <img src="media/4.jpg" alt="Memory 3" class="w-full h-auto rounded-xl object-cover" />
+            </div>
+            <div class="swiper-slide">
+                <img src="media/5.jpg" alt="Memory 3" class="w-full h-auto rounded-xl object-cover" />
+            </div>
+            <div class="swiper-slide">
+                <img src="media/6.jpg" alt="Memory 3" class="w-full h-auto rounded-xl object-cover" />
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        </section>
+
+      <!-- Timeline -->
+        <section class="mt-12 w-full max-w-md sm:max-w-2xl mx-auto bg-white p-4 sm:p-6 rounded-lg shadow-lg" data-aos="fade-up">
+        <h2 class="text-2xl sm:text-3xl font-semibold text-rose-600 mb-6 text-center tracking-wide">我们的时光 🕒</h2>
+        <div class="mb-4">
+            <h3 class="text-xl font-bold text-rose-600 mb-2">2024</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm sm:text-base leading-relaxed">
+            <li>六月 FUKUNIKU</li>
+            <li>七月 Pasar Malam, Homemade hotpot, 煮饭 (Kimchi 炒饭）</li>
+            <li>八月 煮饭(可乐鸡块), Mr. Dakgalbi, 越南菜, 山木, 海底捞</li>
+            <li>九月 越南菜, Mamak, Homemade chazuke, Homemade sushibake</li> 
+            <li>十月 BBQ</li>
+            <li>十一月 BBQ plaza, Genting</li>
+            <li>十二月 Haidilao MUJI gelato, Korean BBQ</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-bold text-rose-600 mb-2">2025</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm sm:text-base leading-relaxed">
+            <li>Jan 117 茶泡饭, Mitasu</li>
+            <li>Feb Ipoh Mali, Mr. Dakgalbi, HDL</li>
+            <li>Mar Genting❣️</li>
+            <li>Apr Nippori Bistro</li>
+            <li>May Malacca Trip 🇲🇾 BKT for 520 celebrate</li>
+            </ul>
+        </div>
+        </section>
+
+        <section class="mt-12 w-full max-w-md sm:max-w-2xl mx-auto bg-white p-4 sm:p-6 rounded-lg shadow-lg" data-aos="fade-up">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-rose-600 mb-6 text-center tracking-wide">给妳的信</h2>
+            <div class="mb-4">
+            <p class="mt-6 text-left text-rose-100 font-semibold text-lg">静诗，</p>
+
+            <p class="leading-relaxed text-base sm:text-lg">
+                十个月快乐，我亲爱的。不知不觉我们已踏入了我们十个月的感情旅程。虽然感觉时间过得很快，
+                但这一路上，有妳的陪伴让我变成了一个更加开朗的人。妳带给我的快乐实在太多太多了。
+                妳无论是美貌、智商、情商通通都齐全，真的是一个十全十美的女孩。
+            </p>
+            <p class="mt-4 leading-relaxed text-base sm:text-lg">
+                回顾我们的时光单，我重新回忆起我们一起度过的快乐时光。没想到因为一首歌，我们的故事就这样开始了。
+                或许这就是爱情吧，哈哈哈。回想起来，满满的爱意，很有意思，也很幸福。
+            </p>
+            <p class="mt-4 leading-relaxed text-base sm:text-lg">
+                谢谢妳来到我的世界。有妳在，世界真的变得更好了。祝我们十个月快乐，也祝我们白头偕老。
+            </p>
+                <p class="mt-6 text-right text-rose-100 font-semibold text-lg">爱妳万分，<br/>凯。</p>
+            </div>
+        </section>
+            
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    </body>
+</html>
